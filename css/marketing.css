@@ -1,0 +1,328 @@
+.navbarmkt {
+  position: fixed;
+}
+
+/* Video fijo en pantalla */
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* Para que no tape el contenido */
+}
+
+/* Video cubre todo el viewport */
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ajustar contenido para que comience después del video */
+/* Estilos iniciales */
+
+.content {
+  width: 60%;
+  margin: 60vh auto 0 auto; /* Se centra horizontalmente */
+  padding: 50px;
+  background: white;
+  height: auto;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.banner {
+  background: black;
+  transition-duration: 0.5s; /* Duración */
+  transition-timing-function: ease; /* Función de tiempo */
+}
+
+.title h4 {
+  color: white;
+}
+
+/* Cambios cuando se hace scroll */
+.content.scrolled {
+  width: 100%;
+  border-radius: 0;
+  transition: width 0.5s ease; /* Suaviza cambios */
+}
+
+.icons-mkt {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.title h1 {
+  background: linear-gradient(120deg, red, yellow);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-box h5 {
+  transition: opacity 0.3s ease-in-out; /* Suaviza el cambio de visibilidad */
+  opacity: 0; /* Inicialmente oculto */
+  margin-top: 10px;
+}
+
+.service-box span {
+  font-size: 50px;
+  background: #708dfa;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.info-container {
+  background: #f0f0f0;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 3%;
+  margin: 5% auto;
+}
+
+.img-info-container {
+  text-align: center;
+  justify-items: end;
+  align-items: end;
+  object-fit: contain;
+  img {
+    width: 480px;
+    height: 240px;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
+}
+
+.planes-mkt {
+  min-height: 70vh;
+  width: 100vw;
+  background: black;
+  padding: 5% 0;
+  background-image: url('../assets/images/marketing/bg-main-plan.jpg');
+}
+
+.planes-mkt h1 {
+  font-size: 4rem;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+#carrousel .card {
+  /* background: white; */
+  background: rgba(255, 255, 255, 0.7); /* Fondo translúcido */
+  border-radius: 20px;
+  padding: 24px;
+  width: 360px;
+  height: 550px;
+  text-align: center;
+  backdrop-filter: blur(10px); /* Desenfoque del fondo */
+}
+
+
+#carrousel .card p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+#carrousel .card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+#carrousel .card li {
+  font-size: 16px;
+  padding: 8px 0;
+  color: #555;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+#carrousel .card li:last-child {
+  border-bottom: none;
+}
+
+.collaboration-banner {
+  background: white;
+  /* background-image: url('ruta/a/tu/pattern-de-arkanist.jpg'); */
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.banner-logo {
+  max-width: 120px; /* Ajusta el tamaño del logotipo según lo necesites */
+  margin-right: 20px; /* Espacio entre el logo y el texto */
+}
+
+.banner-text p {
+  margin: 0;
+  color: black;
+}
+
+.banner-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.collaboration-banner p {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+/* Prueba de cuadros */
+.container-sq {
+  width: 100%;
+  height: 200px; /* Puedes ajustar la altura según lo necesites */
+  background-color: white;
+  display: flex;
+  justify-content: space-between; /* Espacio entre los cuadros */
+  align-items: center; /* Centra los cuadros verticalmente */
+  margin: 0 auto; /* Centra el div horizontalmente */
+}
+
+.square-2 {
+  width: 80%;  /* Tamaño de los cuadrados */
+  height: auto;
+  background-color: white; /* Color de los cuadrados */
+  border-radius: 10px; /* Borde redondeado, opcional */
+}
+
+/* Prueba de cuadros */
+
+
+.square {
+  position: relative;
+  width: 80%;
+  padding-top: 80%; /* Hace que el alto sea igual al ancho */
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.card:hover {
+  scale: 1.01;
+  transition: scale 0.3s ease-in-out;
+}
+
+.card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-body p {
+  width: 80%;
+  margin: 5px auto;
+  font-size: 1rem;
+  color: white;
+}
+
+.card-body h2 {
+  font-size: 2.8rem;
+  color: white;
+}
+
+.card-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinea el contenido al principio */
+  padding: 15px;
+  overflow-y: auto; /* Permite scroll si el texto es largo */
+}
+
+.card-body h2 {
+  color: #cccccc;
+}
+
+ol li {
+  font-size: smaller;
+  text-align: left;
+}
+
+/* Ocultar video en móviles */
+@media (max-width: 768px) {
+  .img-info-container {
+    img {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 0px) {
+  .video-container {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    margin-top: 0; /* En móviles no hay video, así que el contenido inicia desde arriba */
+  }
+
+  .icons-mkt {
+    width: 90%;
+  }
+
+  .service-box h5 {
+    opacity: 0;
+  }
+
+  .service-box span {
+    font-size: 40px;
+  }
+
+  .img-info-container {
+    img {
+      width: 100%;
+      height: 300px;
+    }
+  }
+
+  .planes-mkt h1 {
+    font-size: 3rem;
+  }
+
+  #carrousel .card {
+    padding: 10px;
+    width: 300px;
+    height: 550px;
+  }
+}

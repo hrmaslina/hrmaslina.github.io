@@ -1,0 +1,557 @@
+/* Definir las variables de color */
+:root {
+  --color-primary: #333333; /* Gris oscuro */
+  --color-background: #ffffff; /* Blanco de fondo */
+  --color-header: #000000; /* Negro para encabezados */
+  --color-green: #28a745; /* Verde */
+  --color-red: #dc3545; /* Rojo */
+  --color-yellow: #ffc107; /* Amarillo */
+  --color-blue: #2575fc; /* Azul */
+}
+
+/* Estilo para el fondo */
+.bg-light {
+  background-color: var(--color-background);
+}
+
+.bg-dark {
+  background-color: var(--color-header);
+}
+
+/* Colores adicionales */
+.bg-green {
+  background-color: var(--color-green);
+}
+
+.bg-red {
+  background-color: var(--color-red);
+}
+
+.bg-yellow {
+  background-color: var(--color-yellow);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+/* Aplicar la fuente San Francisco */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+  width: 100%;
+}
+
+/* Estilos generales de los encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+  color: var(--color-header);
+  margin: 0;
+}
+
+/* Tamaños de los encabezados */
+h1 {
+  font-size: 4.5rem; /* Tamaño grande */
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.5rem; /* Tamaño grande */
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.8rem; /* Tamaño medio */
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.5rem; /* Tamaño medio */
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.2rem; /* Tamaño pequeño */
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1rem; /* Tamaño pequeño */
+  font-weight: 400;
+}
+
+/* Estilos de enlaces sin hover */
+a {
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+/* Asegurarse de que no haya cambios en hover, focus o active */
+a:hover,
+a:focus,
+a:active {
+  color: var(--color-blue); /* Mantener el mismo color */
+  text-decoration: none; /* Eliminar subrayado */
+  outline: none; /* Eliminar borde del enfoque */
+}
+
+/* Estilo para contenedores */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el navbar */
+.navbar {
+  background-color: white; /* Navbar transparente */
+  padding: 1% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Asegura que el navbar esté sobre el contenido */
+  width: 100vw;
+  z-index: 10; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: var(--color-header);
+  font-weight: 800;
+}
+
+.navbar-brand.hidden {
+  opacity: 0; /* Hacer el logotipo invisible */
+}
+
+.navbar-nav {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar-nav.active {
+  display: block; /* Mostrar el menú cuando se active */
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: var(--color-header);
+  display: block;
+}
+
+/* Icono del menú hamburguesa */
+.navbar-toggler {
+  display: block;
+  cursor: pointer;
+  position: relative; /* Asegura que el botón se quede en su lugar */
+}
+
+.contact-btn-nav {
+  padding: 0 15px;
+  border-radius: 20px;
+  background: #303030;
+  color: white;
+  a {
+    color: white;
+  }
+}
+
+.label {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background: #333333;
+  color: #ffffff;
+}
+
+.label-txt {
+  margin-top: 1%;
+}
+
+/* Hero Section */
+.hero {
+  background: var(--color-background);
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0 5%;
+}
+
+/* Hero Section */
+.hero-2 {
+  background: var(--color-background);
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.hero-2 h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* Asegurarse de que los íconos de Material se vean bien */
+.material-icons {
+  font-size: 30px; /* Tamaño del icono */
+  vertical-align: middle; /* Alinear al centro */
+  color: var(--color-primary); /* Color del ícono */
+}
+
+.country {
+  text-align: right;
+  color: var(--color-blue);
+}
+
+.video-container {
+  width: 100%; /* Por defecto, 100% del ancho */
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Centrar el video */
+  border-radius: 0px;
+  transition: width 0.3s ease, border-radius 0.3s ease; /* Suaviza cambios */
+}
+
+.video-fill {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0; /* Sin bordes redondeados al principio */
+  transition: width 0.3s, border-radius 0.3s; /* Suaviza la transición */
+}
+
+.horizontal-list {
+  list-style-type: none; /* Quita los puntos de la lista */
+  padding: 0; /* Quita el padding por defecto */
+  margin: 0; /* Quita el margin por defecto */
+  display: flex; /* Hace que los elementos estén en fila */
+}
+
+.horizontal-list li {
+  margin-right: 20px; /* Espacio entre los elementos */
+}
+
+.horizontal-list a {
+  text-decoration: none; /* Quita el subrayado */
+  color: #000; /* Cambia el color del enlace */
+}
+
+.horizontal-list a:hover {
+  color: #007bff; /* Cambia el color al pasar el cursor */
+}
+
+.carrousel-container {
+  background-color: white;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+#carrousel {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-left: -15px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Oculta el scroll en Firefox */
+  -ms-overflow-style: none; /* Oculta el scroll en Internet Explorer y Edge */
+}
+#carrousel::-webkit-scrollbar {
+  display: none; /* Oculta el scroll en Chrome, Safari y Opera */
+}
+
+.card {
+  width: 350px; /* Evita que se reduzca */
+  height: 620px;
+  background: #303030;
+  display: block;
+  align-items: start;
+  justify-content: start;
+  padding: 3%;
+  font-size: 20px;
+  border-radius: 30px;
+  flex-shrink: 0; /* Evita que las cards se reduzcan */
+  p {
+    font-size: 2rem;
+    color: white;
+  }
+}
+
+.carrousel-btn {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.quote {
+  height: auto;
+  padding: 5%;
+  margin-top: 3%;
+  background: #f0f0f0;
+  text-align: center;
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
+.circle-container img {
+  width: 130px; /* Ajusta el tamaño de la imagen */
+  height: 130px; /* Asegúrate de que el alto y el ancho sean iguales para crear un círculo */
+  border-radius: 50%; /* Esto convierte la imagen en un círculo */
+  object-fit: cover; /* Hace que la imagen se recorte y ajuste dentro del círculo */
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, blue, #e6007e, red, orange);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.mkt-container {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-mkt {
+  background: var(--color-blue);
+  height: 500px;
+  border-radius: 15px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.div-mkt h3 {
+  padding: 20px;
+}
+
+.btn-acciones {
+  margin-top: 10px;
+}
+
+.btn-info {
+  font-size: 1rem;
+  font-weight: lighter;
+  display: inline-block; /* Para que se comporte como un botón */
+  border: 1px solid var(--color-blue); /* Borde azul de 2px */
+  padding: 5px 15px; /* Espaciado interno */
+  border-radius: 50px; /* Forma de cápsula */
+  text-decoration: none; /* Quita el subrayado */
+  color: var(--color-blue); /* Color del texto azul */
+  font-weight: 400; /* Opcional: para resaltar el texto */
+  transition: all 0.3s ease; /* Transición suave */
+  background: transparent;
+}
+
+.btn-video {
+  background: white;
+  border-color: white;
+}
+
+.btn-info:hover {
+  background: var(--color-blue); /* Opción: fondo azul al pasar el mouse */
+  color: white; /* Texto en blanco */
+}
+
+.footer {
+  padding: 0 12%;
+  font-size: smaller;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Línea sutil y discreta */
+  padding-top: 20px; /* Espacio superior para separar el contenido */
+  padding-bottom: 20px; /* Espacio inferior para el footer */
+  margin: 0 auto;
+  background: #f0f0f0;
+}
+
+.footer .row h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer ul li {
+  list-style: none;
+  color: #5a5a5a;
+  a {
+    color: #303030;
+  }
+}
+
+.cright {
+  padding-top: 5px;
+}
+
+sup {
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+/* Botones de colapsado en móvil */
+.btn-link {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+}
+
+/* Rotar el icono cuando el colapsable está abierto */
+button[data-bs-toggle="collapse"] .material-icons {
+  transition: transform 0.3s ease;
+}
+
+button[data-bs-toggle="collapse"][aria-expanded="true"] .material-icons {
+  transform: rotate(180deg);
+}
+
+/* Ícono desplegable */
+.btn-link::after {
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+.btn-link span {
+  font-size: medium;
+  margin-left: 20px;
+}
+
+/* Responsividad: Menú visible por defecto en dispositivos pequeños */
+@media (max-width: 1024px) {
+  .navbar-nav {
+    background: var(--color-background);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+  }
+
+  .navbar-toggler {
+    display: block; /* Mostrar el icono del menú */
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+  }
+
+  .nav-link {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  .navbar-brand {
+    padding-left: 5%;
+  }
+
+  .contact-btn-nav {
+    width: 90%;
+    padding: 0 5px;
+  }
+
+  .hero {
+    height: 30vh;
+  }
+
+  .hero-2 {
+    height: 30vh;
+  }
+
+  .hero-h3 h3 {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .footer {
+    margin: 0;
+    padding: 5%;
+    text-align: center;
+  }
+
+  .country {
+    text-align: center;
+  }
+
+  .carrousel-container {
+    width: 100%;
+  }
+
+  .card {
+    width: 250px;
+    height: 420px;
+    padding: 6%;
+    p {
+      font-size: 1.6rem;
+    }
+  }
+
+  .circle-container img {
+    width: 80px; /* Ajusta el tamaño de la imagen */
+    height: 80px;
+  }
+
+  .quote {
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+
+  .btn-link {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Línea sutil y discreta */
+  }
+
+  .list-footer-serv ul li {
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,206 @@
+.navbarmkt {
+  position: fixed;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1; /* El video está detrás del contenido */
+}
+
+video {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  bottom: 10%; /* Ajusta el espacio desde la parte inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.title h1,
+.title h4 {
+  margin: 0;
+  color: white;
+}
+
+.content {
+  width: 100%;
+  margin: 100vh auto 0 auto; /* Se centra horizontalmente */
+  background: white;
+  height: auto;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.multimedia-approach {
+  width: 80vw;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.multimedia-approach h1 {
+  margin: 5% auto;
+  font-size: 3rem;
+}
+
+.multimedia-approach h2 {
+  margin: 5% auto;
+  font-size: 2.5rem;
+  color: #101010;
+}
+
+.categories {
+  background: white;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pill {
+  display: inline-block;
+  background-color: white;
+  color: #ff5a00;
+  border: 2px solid #ff5a00;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.main-galleria {
+  background: white;
+  width: 100vw;
+  margin-top: 5%;
+}
+
+.video-container-2 video {
+  height: 60vh;
+  width: 100vw;
+}
+
+.carousel {
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Agrupando las tarjetas para una mejor estructura. */
+.group {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+  will-change: transform;
+  animation: scrolling 25s linear infinite;
+}
+
+.card-mlt {
+  width: 350px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: #ff5a00;
+}
+
+.card-mlt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Evita distorsiones */
+}
+
+.descrp {
+  background: black;
+  height: auto;
+  margin: 0 auto;
+  padding: 3%;
+  text-align: center;
+}
+
+.descrp h1 {
+  font-size: 3.5rem;
+  background: linear-gradient(90deg, #FF6A00 30%, #007F2D);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.descrp h3 {
+  font-size: 1.7rem;
+  color: white;
+  margin-top: 20px;
+}
+
+.descrp img{
+  max-height: 55vh;
+  width: auto;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+  .carousel-images img {
+    width: 300px; /* Ajusta el tamaño en pantallas medianas */
+    height: 150px; /* Ajusta la altura */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-images img {
+    width: 200px; /* Ajusta el tamaño en pantallas pequeñas */
+    height: 120px; /* Ajusta la altura */
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 0px) {
+  .content {
+    padding: 0;
+  }
+
+  .multimedia-approach {
+    width: 95vw;
+  }
+  .multimedia-approach h1 {
+    font-size: 1.6rem;
+  }
+
+  .multimedia-approach h2 {
+    font-size: 1.3rem;
+  }
+
+  .pill {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .descrp img{
+    margin: 40px auto;
+  }
+}

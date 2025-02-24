@@ -1,0 +1,169 @@
+ƒ
+.modal {
+    display: none;
+    margin: 0 auto;
+}
+.modal.show {
+    display: block;
+}
+
+/* Estilos personalizados para el modal */
+.modal-service .modal-dialog {
+    min-width: 90%;  /* Asegura que el modal sea responsivo */
+    margin: 4% auto;
+  }
+
+  .modal-content{
+    border-radius: 20px;
+  }
+
+  /* Eliminar borde del modal-header */
+.modal-header {
+    border-bottom: none; /* Elimina la línea del borde inferior */
+    align-items: end;
+    justify-content: end;
+    margin-top: 2%;
+  }
+  
+  /* Eliminar borde del modal-footer */
+  .modal-footer {
+    border-top: none; /* Elimina la línea del borde superior */
+  }
+  
+  .modal-service .modal-body {
+    min-height: 1000px;
+    border-radius: 20px;
+    background-color: white;  /* Fondo blanco */
+  }
+  
+  /* Asegura que el modal tenga transiciones suaves */
+  .modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+  }
+
+.modal-container{
+ width: 90%;
+ margin: 0 auto;
+}
+
+.m-title p{
+     font-size: 1.4rem;
+    color: #3c3c3c;
+}
+
+.info-container{
+    background: #f0f0f0;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 3%;
+    margin: 5% auto;
+}
+
+.img-info-container{ 
+text-align: center;
+justify-items: end;
+align-items: end;
+    img{
+        width: 250px;
+        height: 300px;
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+}
+
+.text-info-container{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    h2{
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    p{
+        font-weight: 500;
+    }
+}
+
+  /* Estilos personalizados para el botón de cerrar */
+.custom-close-btn {
+    position: fixed;
+    z-index: 10;
+    background-color: #303030;  /* Color de fondo personalizado */
+    border: none;               /* Elimina el borde */
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;         /* Hacer el botón redondo */
+    color: white;               /* Color del texto */
+    font-size: 16px;            /* Tamaño de la fuente */
+    cursor: pointer;           /* Cursor de puntero */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s; /* Transición suave para el color */
+    span{
+        font-size: 25px;
+        font-weight: bolder;
+        color: white;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .modal-service .modal-dialog {
+      margin: 5% auto;
+    }
+  
+    .text-info-container p {
+      padding: 2%;
+    }
+
+    .modal-header {
+        margin-top: 7%;
+      }
+
+      .m-title p{
+        font-size: 1rem;
+   }
+   
+   .info-container{
+    width: 100%;
+    padding: 0;
+}
+
+.img-info-container {img{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        
+    }
+}
+
+   .info-container .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-info-container {
+    order: 1;  /* Asegura que el texto esté arriba */
+    p{
+       padding: 5%;
+    }
+  }
+
+  .img-info-container {
+    order: 2;  /* Asegura que la imagen esté debajo */
+    margin-top: 15px;  /* Agrega un espacio entre el texto y la imagen */
+  }
+
+.m-title h1{
+    font-size: 2.5rem;
+   color: #3c3c3c;
+}
+
+
+  }

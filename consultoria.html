@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Consultoria - Maslina.</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/modals.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">M.</a>
+
+        <button
+          class="navbar-toggler"
+          id="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span id="menu-icon" class="material-icons">menu</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="desarrollo.html">Desarrollo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="consultoria.html">Consultoría</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mantenimiento.html">Mantenimiento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="multimedia.html">Multimedia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="marketing.html">Marketing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="maslina.html">Maslina.</a>
+            </li>
+
+            <li class="nav-item contact-btn-nav">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <!-- Aqui va el footer contenido arriba de esta nota -->
+      <section style="height: 100px; background: white"></section>
+
+      <footer class="footer container-fluid">
+        <div class="row text-left">
+          <!-- Tech Stack -->
+          <div class="col-lg-4 col-sm-11 list-footer-serv">
+            <h6 style="margin-bottom: 20px">
+              <button
+                class="btn btn-link text-dark d-lg-none"
+                data-bs-toggle="collapse"
+                data-bs-target="#techStack"
+              >
+                Tech Stack
+                <span class="material-icons">keyboard_arrow_down</span>
+              </button>
+              <span class="d-none d-lg-block">Tech Stack</span>
+            </h6>
+            <ul id="techStack" class="collapse d-lg-block">
+              <li>Frontend</li>
+              <li>Backend</li>
+              <li>Android</li>
+              <li>iOS</li>
+              <li>Java</li>
+              <li>PHP</li>
+              <li>Python</li>
+              <li>Angular</li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-4 col-sm-11 list-footer-serv">
+            <h6 style="margin-bottom: 20px">
+              <button
+                class="btn btn-link text-dark d-lg-none"
+                data-bs-toggle="collapse"
+                data-bs-target="#services"
+              >
+                Services
+                <span class="material-icons">keyboard_arrow_down</span>
+              </button>
+              <span class="d-none d-lg-block">Services</span>
+            </h6>
+            <ul id="services" class="collapse d-lg-block">
+              <li>Datos e Inteligencia Artificial</li>
+              <li><a href="desarrollo.html">Desarrollo de Aplicaciones</a></li>
+              <li>Servicios en la Nube</li>
+              <li>Ciberseguridad</li>
+              <li>Servicios de Soporte</li>
+              <li><a href="multimedia.html">Multimedia -</a></li>
+              <li>Ingeniería</li>
+              <li><a href="marketing.html">Marketing -</a></li>
+              <li>UI/UX Design</li>
+              <li>SaaS</li>
+              <li>Bases de datos</li>
+            </ul>
+          </div>
+
+          <!-- Maslina -->
+          <div class="col-lg-4 col-sm-11 list-footer-serv">
+            <h6 style="margin-bottom: 20px">
+              <button
+                class="btn btn-link text-dark d-lg-none"
+                data-bs-toggle="collapse"
+                data-bs-target="#maslina"
+              >
+                Maslina.
+                <span class="material-icons">keyboard_arrow_down</span>
+              </button>
+              <span class="d-none d-lg-block">Maslina.</span>
+            </h6>
+            <ul id="maslina" class="collapse d-lg-block">
+              <li><a href="maslina.html">Sobre Nosotros -</a></li>
+              <li>Insights</li>
+              <li>TyC Generales</li>
+              <li>TyC para Servicios de Consultoría</li>
+              <li><a href="contacto.html">Contacto -</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row cright">
+          <div class="col-sm-11 col-md-8 col-lg-8">
+            <p>
+              Copyright &copy; 2025 Maslina. Todos los derechos reservados.<br />
+              <a href="#">Política de Privacidad</a>
+            </p>
+          </div>
+          <div class="col-sm-11 col-md-4 col-lg-4 country">
+            <p>México</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Modales -->
+      <div id="modalContainer"></div>
+    </div>
+
+    <!-- Script de Bootstrap JS y jQuery desde CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>
