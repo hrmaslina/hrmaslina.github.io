@@ -10,7 +10,8 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: -1; /* Para que no tape el contenido */
+  z-index: -1;
+  /* Para que no tape el contenido */
 }
 
 /* Video cubre todo el viewport */
@@ -25,7 +26,8 @@
 
 .content {
   width: 60%;
-  margin: 60vh auto 0 auto; /* Se centra horizontalmente */
+  margin: 60vh auto 0 auto;
+  /* Se centra horizontalmente */
   padding: 50px;
   background: white;
   height: auto;
@@ -39,8 +41,10 @@
 
 .banner {
   background: black;
-  transition-duration: 0.5s; /* Duración */
-  transition-timing-function: ease; /* Función de tiempo */
+  transition-duration: 0.5s;
+  /* Duración */
+  transition-timing-function: ease;
+  /* Función de tiempo */
 }
 
 .title h4 {
@@ -51,7 +55,8 @@
 .content.scrolled {
   width: 100%;
   border-radius: 0;
-  transition: width 0.5s ease; /* Suaviza cambios */
+  transition: width 0.5s ease;
+  /* Suaviza cambios */
 }
 
 .icons-mkt {
@@ -67,8 +72,10 @@
 }
 
 .service-box h5 {
-  transition: opacity 0.3s ease-in-out; /* Suaviza el cambio de visibilidad */
-  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease-in-out;
+  /* Suaviza el cambio de visibilidad */
+  opacity: 0;
+  /* Inicialmente oculto */
   margin-top: 10px;
 }
 
@@ -95,6 +102,7 @@
   justify-items: end;
   align-items: end;
   object-fit: contain;
+
   img {
     width: 480px;
     height: 240px;
@@ -119,13 +127,15 @@
 
 #carrousel .card {
   /* background: white; */
-  background: rgba(255, 255, 255, 0.7); /* Fondo translúcido */
+  background: rgba(255, 255, 255, 0.7);
+  /* Fondo translúcido */
   border-radius: 20px;
   padding: 24px;
   width: 360px;
   height: 550px;
   text-align: center;
-  backdrop-filter: blur(10px); /* Desenfoque del fondo */
+  backdrop-filter: blur(10px);
+  /* Desenfoque del fondo */
 }
 
 
@@ -177,8 +187,10 @@
 }
 
 .banner-logo {
-  max-width: 120px; /* Ajusta el tamaño del logotipo según lo necesites */
-  margin-right: 20px; /* Espacio entre el logo y el texto */
+  max-width: 120px;
+  /* Ajusta el tamaño del logotipo según lo necesites */
+  margin-right: 20px;
+  /* Espacio entre el logo y el texto */
 }
 
 .banner-text p {
@@ -204,14 +216,15 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  gap: 30px; /* Espaciado opcional entre los cuadrados */
+  gap: 30px;
+  /* Espaciado opcional entre los cuadrados */
   background: white;
 }
 
 .square-2 {
   position: relative;
-  width: 45%; /* 90% de la mitad del ancho de la pantalla */
-  aspect-ratio: 1 / 1; /* Hace que el div sea un cuadrado perfecto */
+  width: 45%;
+  aspect-ratio: 1 / 1;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -229,12 +242,14 @@
 .square-2 .text-center {
   position: relative;
   z-index: 2;
-  color: white; /* Texto rojo */
+  color: white;
   text-align: center;
   font-weight: bold;
-  padding: 30px 10px;
+  padding: 20px 10px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 20%, transparent 80%);
-  h2{
+
+  h2 {
+    margin-top: -20px;
     color: white;
   }
 }
@@ -252,12 +267,14 @@ ol li {
       height: 200px;
     }
   }
+
   .square-2 {
-    width: 80%;
+    width: 90%;
   }
 
   .container-sq {
     gap: 0;
+    margin-top: 40px;
   }
 
 }
