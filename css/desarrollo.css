@@ -1,0 +1,253 @@
+html,
+body {
+    background: #030303;
+    color: #f0f0f0;
+    max-width: 100%;
+}
+
+.yellow-gradiant {
+    background: linear-gradient(90deg, #FFD700, #32CD32);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar {
+    position: fixed;
+}
+
+.navbar {
+    background: #030303;
+}
+
+.navbar-brand {
+    color: #f0f0f0;
+}
+
+.nav-link {
+    color: #f0f0f0;
+}
+
+.contact-btn-nav {
+    color: #f0f0f0;
+}
+
+.techs {
+    margin-top: 70px;
+    width: 100%;
+    background: #3b3b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    overflow: hidden;
+}
+
+.techs ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+    height: 110px;
+    padding: 5px 0;
+    overflow-x: auto;
+    width: max-content;
+}
+
+.techs li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: #f0f0f0;
+    margin-top: 20px;
+    flex: 0 0 auto;
+}
+
+.techs li img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.content {
+    height: 100vh;
+    background: #030303;
+}
+
+.content h1 {
+    color: #f0f0f0;
+}
+
+.banner {
+    height: 80vh;
+    text-align: left;
+}
+
+.banner h1 {
+    color: #f0f0f0;
+}
+
+.banner h5 {
+    padding: 20px 50px;
+    color: #f0f0f0;
+}
+
+.img-banner {
+    height: 400px;
+    width: auto;
+}
+
+.gradient-div {
+    min-height: 300px;
+    width: 100%;
+    background: #2c344b;
+    padding: 25px;
+}
+
+.gradient-div h1,
+.gradient-div h5 {
+    color: #f0f0f0;
+    margin-top: 20px;
+}
+
+.needapp {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.needapp ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    padding: 5px 0;
+    overflow-x: auto;
+}
+
+.needapp li img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.whydam {
+    min-height: 70vh;
+    background: #e1e5eb;
+}
+
+.whydam h6 {
+    padding: 50px;
+}
+
+.whydam h1,
+.whydam h6 {
+    color: #030303;
+}
+
+.dev-video video {
+    height: 500px;
+    margin-left: 30px;
+    border-radius: 50px;
+}
+
+.form-dev h4 {
+    text-align: center;
+}
+
+.form-dev li {
+    color: #030303;
+}
+
+.footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: #030303;
+}
+
+.footer h6 {
+    color: #9d9d9d;
+}
+
+.footer ul li {
+    list-style: none;
+    color: #9d9d9d;
+
+    a {
+        color: #9d9d9d;
+    }
+}
+
+.title-footer {
+    color: #9d9d9d;
+}
+
+.box {
+    height: 200px;
+}
+
+.proceso-dev h1 {
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.proceso-dev h3 {
+    color: #e1e5eb;
+}
+
+@media (max-width: 1048px) {
+    .navbar-nav {
+        background: #030303
+    }
+
+    .techs {
+        margin-top: 55px;
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+
+    .techs ul {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    .banner h5 {
+        margin-top: 30px;
+    }
+
+    .img-banner {
+        height: 300px;
+        padding: 20px 0px;
+    }
+
+    .gradient-div h2 {
+        font-size: 1.7rem
+    }
+
+    .gradient-div h5 {
+        font-size: 1rem;
+    }
+
+    .dev-video video {
+        height: 250px;
+        margin: 30px auto;
+        border-radius: 30px;
+    }
+
+    .whydam h6 {
+        padding: 20px;
+    }
+}

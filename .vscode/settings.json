@@ -8,5 +8,7 @@
     },
     "[javascript]": {
         "editor.defaultFormatter": "HookyQR.beautify"
-    }
+    },
+    "editor.tabSize": 6,
+    "editor.cursorStyle": "line-thin"
 }
