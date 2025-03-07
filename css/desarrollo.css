@@ -133,8 +133,8 @@ body {
 }
 
 .needapp li img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 5px;
 }
 
@@ -199,6 +199,11 @@ body {
 
 .proceso-dev h3 {
     color: #e1e5eb;
+}
+
+.proceso-dev img {
+    height: 150px;
+    width: 150px;
 }
 
 @media (max-width: 1048px) {
