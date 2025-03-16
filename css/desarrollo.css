@@ -103,13 +103,13 @@ body {
 .gradient-div {
     min-height: 300px;
     width: 100%;
-    background: #2c344b;
-    padding: 25px;
+    background: #a4c639;
+    padding: 35px;
 }
 
 .gradient-div h1,
 .gradient-div h5 {
-    color: #f0f0f0;
+    color: #030303;
     margin-top: 20px;
 }
 
@@ -135,7 +135,7 @@ body {
 .needapp li img {
     width: 100px;
     height: 100px;
-    margin-bottom: 5px;
+    margin: 5px 15px;
 }
 
 .whydam {
@@ -254,5 +254,11 @@ body {
 
     .whydam h6 {
         padding: 20px;
+    }
+
+    .dev-video video {
+        width: 80vh;
+        margin: 0 auto;
+        border-radius: 50px;
     }
 }
